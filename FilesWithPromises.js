@@ -2,7 +2,7 @@ const fileSystem = require('fs');
 
 function readFilePromise(path){
     
-        return new Promise((resolve,recect) => {
+        return new Promise((resolve,reject) => {
     
             fileSystem.readFile(path, (err,buff) => {
     
@@ -19,7 +19,7 @@ function readFilePromise(path){
     
 function WriteFilePromise(path,content){
     
-    return new Promise((resolve,recect) => {
+    return new Promise((resolve,reject) => {
 
         fileSystem.writeFile(path,buff, (err) => {
             
