@@ -31,7 +31,7 @@ app.get('/fmi', function (req,res) {
 
             innerRes.on('end', () => {
 
-                let respText =  'most used word :' ;
+                let respText =  'most used word : ' ;
                 respText += wCnt(data);
 
                 res.send(respText).end();

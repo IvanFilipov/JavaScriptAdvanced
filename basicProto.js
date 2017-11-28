@@ -19,7 +19,7 @@ Point.prototype.add = function (pnt){ //only one function for all Point objects
 }
 
 
-//Prototypal inheritance
+//Prototype inheritance
 
 function Person(first, last, age, gender, interests) {
     this.name = {
