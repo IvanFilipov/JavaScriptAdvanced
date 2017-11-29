@@ -4,7 +4,6 @@ const https = require('https');
 const app = express();
 const wCnt = require('./WordsCount').wordsCount;
 
-
 app.get('/', function (req,res) {
 
     res.send('hello!');
